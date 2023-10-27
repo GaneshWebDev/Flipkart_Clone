@@ -4,7 +4,11 @@ const products=require('./routes/products');
 const userSignUp=require('./routes/userRoute');
 const cors=require('cors');
 const app=express();
-app.use(cors({ origin: 'https://flikart-clone-frontend.onrender.com' }));
+app.use(cors({
+  origin: 'https://flikart-clone-frontend.onrender.com',
+  methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
+  credentials: true, // Include cookies in the requests if applicable
+}));
 app.use(express.json());
 app.use(userSignUp);
 app.use(products);
