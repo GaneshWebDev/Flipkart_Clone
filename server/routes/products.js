@@ -65,6 +65,28 @@ router.post('/kartProduct',async(req,res)=>{
         console.log(error)
       }
     });
+app.get('/products/search', async (req, res) => {
+  const searchString = req.query.product;
+
+  try {
+    // Use a case-insensitive regular expression to find products that match the search string
+    const regex = new RegExp(searchString, 'i');
+
+    const matchingProducts = await Product.find({
+      $or: [
+        { Product_Title: { $regex: regex } },
+        { Brand: { $regex: regex } },
+        // Add more fields as needed
+      ],
+    });
+
+    res.json({ data: matchingProducts });
+  } catch (error) {
+    console.error(error);
+    res.status(500).json({ error: 'An error occurred while searching for products.' });
+  }
+});
+
 router.post('/kartProduct/remove',async(req,res)=>{
       const {product,id}=req.body;
       const product_id=product.Uniq_Id;
