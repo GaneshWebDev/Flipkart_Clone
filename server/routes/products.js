@@ -4,7 +4,7 @@ const productsModel=require('../models/products');
 const kartModel=require('../models/kart');
 router.get('/products', (req, res) => {
   productsModel.aggregate([
-    { $sample: { size: 30 } } // Fetch a random sample of 30 documents
+    { $sample: { size: 30 } } // Fetch a random sample of 30 documents i
   ])
   .exec()
   .then(data => {
