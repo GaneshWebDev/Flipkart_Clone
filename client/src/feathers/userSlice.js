@@ -5,7 +5,7 @@ const initialState={
     email:null,
     orders:null
 }
-const userSlice=createSlice({
+const userReducer=createSlice({
     name:'user',
     initialState,
     reducers:{
@@ -28,5 +28,5 @@ const userSlice=createSlice({
 
 });
 
-export const {userLogin,userLogout,userOrders}=userSlice.actions;
-export default userSlice.reducer;
+export const {userLogin,userLogout,userOrders}=userReducer.actions;
+export default userReducer.reducer;
