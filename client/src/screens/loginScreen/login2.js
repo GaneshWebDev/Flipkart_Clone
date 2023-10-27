@@ -23,7 +23,7 @@ function LoginNew(fun){
            });
           
         }else{
-            axios.post('https://newbackend-flipkart.onrender.com/userSignIn',data).then(res=>{
+            axios.post('/userSignIn',data).then(res=>{
              console.log(res.data.data);
              dispatch(userLogin(res.data.data));
            }).catch(err=>{
