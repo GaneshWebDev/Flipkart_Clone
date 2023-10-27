@@ -1,0 +1,10 @@
+.app{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 99vw;
+  height: auto;
+ border: 2px solid white;
+ background-color: #F5F5F5;
+ overflow-y: auto;
+}

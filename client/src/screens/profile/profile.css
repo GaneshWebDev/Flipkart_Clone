@@ -1,0 +1,70 @@
+.profile{
+    margin-top: 100px;
+    color: gray;
+    width: 100wh;
+    height: 100vh;
+}
+.profile_avatar{
+    display: flex;
+    align-items: center;
+    font-size: 2.8rem;
+    font-weight: 600;
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px;
+    width: 80vw;
+    justify-content: center;
+}
+.profile_avatar img{
+    height: 50px;
+    width: 50px;
+    margin-right: 20px;
+}
+.orders{
+    display: flex;
+    align-items: center;
+    font-size: 1.8rem;
+    font-weight: 600;
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px;
+    width: 80vw;
+    text-align: center;
+    justify-content: center;
+    margin-top: 10px;
+    height:auto;
+}
+.orders th{
+    border: 2px solid;
+}
+.orders td{
+    border: 2px solid;
+    align-items: center;
+}
+.orders h1{
+    align-items: center;
+}
+.logout{
+    display: flex;
+    align-items: center;
+    font-size: 2.8rem;
+    font-weight: 600;
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    width: 80vw;
+    justify-content: center;
+    margin-top: 10px;
+    height:auto; 
+}
+.logout img{
+    height: 40px;
+    width: 40px;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+.logout span:hover{
+    color: #2874f0;
+    cursor: pointer;
+}

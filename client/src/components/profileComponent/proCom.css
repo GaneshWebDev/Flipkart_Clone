@@ -1,0 +1,33 @@
+.proCom{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    color: #383B39;
+    height: 120px;
+    width: 250px;
+    border-radius: 3px;
+}
+.proCom img{
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+.proCom span{
+    text-decoration: none;
+}
+.proCom div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 10px;
+    border-bottom: 1px solid gainsboro;
+    width: 100%;
+}
+.proCom div:hover{
+    font-size: 1.1rem;
+}

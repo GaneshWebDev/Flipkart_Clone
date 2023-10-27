@@ -1,0 +1,23 @@
+.banner{
+    display: flex;
+    align-items: center;
+    background-color: white;
+    color: black;
+    margin: 10px 20px 0px 20px;
+    width: 95vw;
+    padding: 15px;
+    border-radius: 2px;
+}
+.banner .types{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-left: 60px;
+    font-weight: 600;
+    cursor: pointer;
+   
+}
+.banner .types img{
+     height: 60px;
+     width: 60px;
+}
