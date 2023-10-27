@@ -72,7 +72,7 @@ router.get('/products/search', async (req, res) => {
     // Use a case-insensitive regular expression to find products that match the search string
     const regex = new RegExp(searchString, 'i');
 
-    const matchingProducts = await Product.find({
+    const matchingProducts = await productsModel.find({
       $or: [
         { Product_Title: { $regex: regex } },
         { Brand: { $regex: regex } },
