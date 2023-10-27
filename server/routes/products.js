@@ -65,7 +65,7 @@ router.post('/kartProduct',async(req,res)=>{
         console.log(error)
       }
     });
-app.get('/products/search', async (req, res) => {
+router.get('/products/search', async (req, res) => {
   const searchString = req.query.product;
 
   try {
