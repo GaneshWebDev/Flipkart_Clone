@@ -2,7 +2,8 @@ import { createSlice } from "@reduxjs/toolkit";
 const initialState={
     user:false,
     id:null,
-    email:null
+    email:null,
+    orders:null
 }
 const userSlice=createSlice({
     name:'user',
@@ -16,7 +17,9 @@ const userSlice=createSlice({
         },
         userLogout:(state)=>{
             state.user=false;
-            state.details = null;
+            state.id=null;
+            state.email=null;
+            state.orders=null;
         },
         userOrders:(state,action)=>{
             state.orders=action.payload.orders;
