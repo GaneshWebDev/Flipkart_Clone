@@ -88,7 +88,7 @@ router.post('/kartProduct/remove',async(req,res)=>{
                 console.error('Error updating document:', error);
               });
  });
-router.get('/kartProducts/:id',async (req,res)=>{
+/*router.get('/kartProducts/:id',async (req,res)=>{
       const userId = req.params.id;
       const products=await kartModel.find({ user_id:userId });
       try {
@@ -99,7 +99,7 @@ router.get('/kartProducts/:id',async (req,res)=>{
       } catch (error) {
          res.send({err});
       }
-    });
+    });*/
 router.get('/kartProduct/:id',async (req,res)=>{
       const Id = req.params.id;
       const products=await kartModel.find({ Uniq_Id:Id });
