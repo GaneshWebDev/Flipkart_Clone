@@ -5,9 +5,7 @@ const userSignUp=require('./routes/userRoute');
 const cors=require('cors');
 const app=express();
 app.use(cors({
-  origin: 'https://flipkart-forntend.onrender.com',
-  methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
-  credentials: true, // Include cookies in the requests if applicable
+  origin: 'https://flipkart-forntend.onrender.com', // Include cookies in the requests if applicable
 }));
 app.use(express.json());
 app.use(userSignUp);
