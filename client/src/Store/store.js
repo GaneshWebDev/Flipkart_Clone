@@ -1,13 +1,13 @@
 
 import { configureStore } from '@reduxjs/toolkit';
-import userSlice from '../feathers/userSlice';
+import userReducer from '../feathers/userSlice';
 import storage from 'redux-persist/lib/storage';
 import { persistReducer,persistStore} from 'redux-persist';
 const presistConfig={
   key:'root',
   storage,
 }
-const presistedReducer=persistReducer(presistConfig,userSlice);
+const presistedReducer=persistReducer(presistConfig,userReducer);
 
 export const store = configureStore({
   reducer:{
