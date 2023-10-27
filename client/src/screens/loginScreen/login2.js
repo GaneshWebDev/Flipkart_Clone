@@ -25,7 +25,7 @@ function LoginNew(fun){
         }else{
             axios.post('/userSignIn',data).then(res=>{
              console.log(res.data.data);
-             dispatch(userLogin(res.data.data));
+             dispatch(userLogin({ id: res.data.data.id, email: res.data.data.email, orders:res.data.data.orders}));
            }).catch(err=>{
             console.log(err);
            })
